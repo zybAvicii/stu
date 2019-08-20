@@ -1,0 +1,17 @@
+package com.jt.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.alibaba.dubbo.config.annotation.Reference;
+import com.jt.pojo.Order;
+import com.jt.service.OrderService;
+
+@Controller
+public class OrderController {
+
+	@Reference(timeout = 3000,check = false)
+	private OrderService orderService;
+	
+
+}

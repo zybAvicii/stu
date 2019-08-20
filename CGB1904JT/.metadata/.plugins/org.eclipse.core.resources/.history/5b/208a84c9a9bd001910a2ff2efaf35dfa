@@ -1,0 +1,31 @@
+package com.jt.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.alibaba.dubbo.config.annotation.Reference;
+
+@Controller
+@RequestMapping("/user")
+public class UserController {
+	
+	@Reference(timeout = 3000,check = true)
+	private DubboUserService userService;
+	
+	
+	
+	
+	
+	/**
+	 * 用户页面跳转
+	 * www.jt.com/user/register.html
+	 * www.jt.com/user/login.html
+	 * */
+	@RequestMapping("/{moduleName}")
+	public String login(@PathVariable String moduleName) {
+		return moduleName;
+		
+		
+	}
+}

@@ -1,0 +1,16 @@
+package com.jt.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.jt.pojo.Order;
+import com.jt.service.OrderService;
+
+@Controller
+public class OrderController {
+
+	@Autowired
+	private OrderService orderService;
+	
+
+}

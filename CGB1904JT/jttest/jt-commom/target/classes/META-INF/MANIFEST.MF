@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: jt-commom
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Administrator
+Implementation-Vendor-Id: jttest
+Build-Jdk: 1.8.0_101
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/com.jt/jt-commom
+Created-By: Maven Integration for Eclipse
+

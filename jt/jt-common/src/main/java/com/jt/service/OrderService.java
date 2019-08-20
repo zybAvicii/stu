@@ -1,0 +1,12 @@
+package com.jt.service;
+
+import com.jt.pojo.Order;
+
+public interface OrderService {
+
+	
+	Order findOrderById(String id);
+
+	String saveOrder(Order order);
+
+}

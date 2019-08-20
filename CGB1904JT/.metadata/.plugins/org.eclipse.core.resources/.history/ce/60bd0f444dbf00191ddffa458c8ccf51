@@ -1,0 +1,61 @@
+package com.jt.interceptor;
+
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.servlet.HandlerInterceptor;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.alibaba.druid.util.StringUtils;
+import com.alibaba.dubbo.config.spring.util.ObjectUtils;
+import com.jt.pojo.User;
+import com.jt.util.ObjectMapperUtil;
+
+import redis.clients.jedis.JedisCluster;
+
+@Component
+public class UserInterceptor implements HandlerInterceptor {
+	
+	@Autowired
+	private JedisCluster jedisCluster;
+	
+	//request拿.response给
+	@Override
+	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
+			throws Exception {
+		
+	
+		Cookie[] cookies=request.getCookies();
+		String ticket=null;
+		if (cookies.length>0) {
+			for (Cookie cookie : cookies) {
+				if ("JT_TICKET".equals(cookie.getName())) {
+					ticket=cookie.getValue();
+					break;
+				}
+			}
+		}
+		if (!StringUtils.isEmpty(ticket)) {
+			String userJSON = jedisCluster.get(ticket);
+				if (!StringUtils.isEmpty(userJSON)) {
+					User object = ObjectMapperUtil.toObject(userJSON, User.class);
+				}
+		}
+		
+		
+		
+		
+		
+		
+		
+		response.sendRedirect("/user/login.html");//重定向到登录页面
+		return false;//开启拦截
+	}
+
+	
+
+	
+}

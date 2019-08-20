@@ -1,0 +1,7 @@
+package com.jt.service;
+
+public interface DubboCartService {
+
+	void findCartListByUserId(Long userId);
+
+}

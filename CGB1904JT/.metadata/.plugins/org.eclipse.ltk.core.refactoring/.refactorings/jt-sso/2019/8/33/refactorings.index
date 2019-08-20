@@ -1,0 +1,20 @@
+1565595100694	Extract local variable 'findCheckUser'
+1565595884967	Extract local variable 'map'
+1565596000081	Extract local variable 'queryWrapper'
+1565596048314	Extract local variable 'string'
+1565596083227	Extract local variable 'selectOne'
+1565597786886	Extract local variable 'jsonObject'
+1565690878357	Delete element
+1565691110255	Extract local variable 'md5'
+1565691232131	Extract local variable 'md5DigestAsHex'
+1565765535023	Extract local variable 'username'
+1565765537929	Extract local variable 'password'
+1565766779044	Extract local variable 'md5DigestAsHex'
+1565766839229	Extract local variable 'selectOne'
+1565767111166	Extract local variable 'json'
+1565773992252	Extract local variable 'string'
+1565777513716	Extract local variable 'jsonObject'
+1565781364670	Extract local variable 'cookies'
+1565781491344	Extract local variable 'cookie'
+1565833213889	Copy package
+1565833830122	Copy elements

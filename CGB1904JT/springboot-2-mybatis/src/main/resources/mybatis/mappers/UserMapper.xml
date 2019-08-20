@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jt.mapper.UserMapper">
+
+	<select id="findAll" resultType="User">
+	select * from user
+	</select>
+	
+	<insert id="insertUser" >
+		insert into user(id,name,age,sex)
+		values(null,#{name},#{age},#{sex})
+	</insert>
+	
+	<!--  <select id="findAll" resultMap="userRM">
+		select * from user
+	</select> 
+	<resultMap type="User" id="userRM">
+		<id column="user_id" property="userId"/>
+		<result column="user_name" property="userName"/>
+		<result column="user_age" property="userAge"/>
+		<result column="user_sex" property="userSex"/>
+	</resultMap> -->
+</mapper>

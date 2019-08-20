@@ -1,0 +1,17 @@
+package com.jt.util;
+
+import com.jt.pojo.User;
+
+//threadlocal API
+public class UserThreadLocal {
+
+	private static ThreadLocal<User> thread=new ThreadLocal<User>();
+	
+	public static User set() {
+		
+	}
+	public static User get() {
+		
+	}
+	
+}

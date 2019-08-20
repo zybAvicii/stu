@@ -1,0 +1,6 @@
+package com.jt.controller;
+
+//同域请求
+public class CatController {
+
+}

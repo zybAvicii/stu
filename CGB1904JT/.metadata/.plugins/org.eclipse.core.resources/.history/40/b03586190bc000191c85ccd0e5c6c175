@@ -1,0 +1,93 @@
+package com.jt.service;
+
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.alibaba.dubbo.config.annotation.Service;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.jt.mapper.OrderItemMapper;
+import com.jt.mapper.OrderMapper;
+import com.jt.mapper.OrderShippingMapper;
+import com.jt.pojo.Order;
+import com.jt.pojo.OrderItem;
+import com.jt.pojo.OrderShipping;
+
+
+
+@Service(timeout = 3000)
+public class OrderServiceImpl implements OrderService{
+	
+	@Autowired
+	private OrderItemMapper orderItemMapper;
+	@Autowired
+	private OrderMapper orderMapper;
+	@Autowired
+	private OrderShippingMapper orderShippingMapper;
+	
+	
+
+	@Override
+	public Order findOrderById(String id) {
+		Order order = orderMapper.selectById(id);
+		OrderShipping orderShipping = orderShippingMapper.selectById(id);
+		QueryWrapper<OrderItem> queryWrapper=new QueryWrapper<>();
+		queryWrapper.eq("order_id",id);
+		List<OrderItem> list = orderItemMapper.selectList(queryWrapper);
+		order.setOrderShipping(orderShipping)
+		.setOrderItems(list);
+		
+		return order;
+	}
+	/*
+	 * Order order = orderMapper.selectById(id); 
+	 * OrderShipping shipping = orderShippingMapper.selectById(id); 
+	 * QueryWrapper<OrderItem> queryWrapper =new QueryWrapper<>(); 
+	 * queryWrapper.eq("order_id", id);
+	 *  List<OrderItem> list =orderItemMapper.selectList(queryWrapper); 
+	 *  order.setOrderShipping(shipping).setOrderItems(list);
+	 */
+
+
+	@Transactional
+	@Override
+	public String saveOrder(Order order) {
+		//1.生成orderId
+		
+		
+		//2.实现订单入库
+		
+		
+		//3.入库订单物流
+		
+		
+		//4.入库订单商品
+		
+		
+		return null;
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

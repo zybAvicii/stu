@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from project &apos;Dongba&apos;&#x0D;&#x0A;- Original project: &apos;Dongba&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.cy.pj.common.vo.CheckBox.java&#x0D;&#x0A;     com.cy.pj.common.vo.Node.java&#x0D;&#x0A;     com.cy.pj.common.vo.PageObject.java" description="Delete elements" element1="/src\/main\/java&lt;com.cy.pj.common.vo{CheckBox.java" element2="/src\/main\/java&lt;com.cy.pj.common.vo{Node.java" element3="/src\/main\/java&lt;com.cy.pj.common.vo{PageObject.java" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1564486247944" subPackages="false" version="1.0"/>
+</session>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=springboot-1-demo/C:\/Users\/Administrator\/mavensts\/repository\/org\/springframework\/spring-beans\/5.1.5.RELEASE\/spring-beans-5.1.5.RELEASE.jar&lt;org.springframework.beans.factory(BeanFactory.class[BeanFactory" modifiers="1537" timestamp="1564047265140"/>
+<typeInfo handle="=jt-common/C:\/Users\/Administrator\/mavensts\/repository\/com\/baomidou\/mybatis-plus-core\/3.0.6\/mybatis-plus-core-3.0.6.jar&lt;com.baomidou.mybatisplus.core.conditions(AbstractWrapper.class[AbstractWrapper" modifiers="1057" timestamp="1564367416318"/>
+<typeInfo handle="=jt-common/C:\/Users\/Administrator\/mavensts\/repository\/org\/aspectj\/aspectjweaver\/1.9.2\/aspectjweaver-1.9.2.jar&lt;org.aspectj.lang(Signature.class[Signature" modifiers="1537" timestamp="1562557055193"/>
+<typeInfo handle="=CGB-DBTMS-ZYB/C:\/Users\/Administrator\/mavensts\/repository\/org\/aspectj\/aspectjweaver\/1.9.4\/aspectjweaver-1.9.4.jar&lt;org.aspectj.lang(Signature.class[Signature" modifiers="1537" timestamp="1562985029384"/>
+<typeInfo handle="=jt-web/C:\/Users\/Administrator\/mavensts\/repository\/org\/springframework\/spring-webmvc\/5.1.5.RELEASE\/spring-webmvc-5.1.5.RELEASE.jar&lt;org.springframework.web.servlet(HandlerInterceptor.class[HandlerInterceptor" modifiers="1537" timestamp="1564047265877"/>
+<typeInfo handle="=jt-cart/C:\/Users\/Administrator\/mavensts\/repository\/org\/quartz-scheduler\/quartz\/2.3.0\/quartz-2.3.0.jar&lt;org.quartz(JobDetail.class[JobDetail" modifiers="1537" timestamp="1564468435718"/>
+</typeInfoHistroy>

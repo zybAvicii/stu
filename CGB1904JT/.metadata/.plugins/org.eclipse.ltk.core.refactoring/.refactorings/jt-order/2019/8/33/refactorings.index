@@ -1,0 +1,13 @@
+1565919811320	Copy compilation unit
+1565919832737	Copy compilation unit
+1565919845720	Rename type 'OrderLogistics'
+1565919850085	Rename type 'OrderItem'
+1565920044877	Rename type 'OrderLogisticsMapper'
+1565920272921	Rename resource 'UserMapper.xml'
+1565920280973	Copy file
+1565920296104	Copy file
+1565927128883	Extract local variable 'date'
+1565927431280	Extract local variable 'orderShipping'
+1565936469490	Extract local variable 'selectById'
+1565936635869	Extract local variable 'selectById'
+1565939151632	Extract local variable 'selectList'
